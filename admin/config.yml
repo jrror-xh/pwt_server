@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jrorr-xh/pwt-server
+  repo: jrorr-xh/pwt_server
   branch: main
 
 media_folder: "images/uploads"
