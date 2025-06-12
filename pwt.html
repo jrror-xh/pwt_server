@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWT 原版生电服务器</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('OIP.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #ffeb3b;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #eee;
+    }
+
+    nav {
+      background: rgba(51, 51, 51, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background: #4caf50;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #81c784;
+    }
+
+    .card {
+      padding: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: #aaa;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a onclick="showSection('home')">首页</a>
+    <a onclick="showSection('apply')">报名方式</a>
+    <a onclick="showSection('rules')">服务器规定</a>
+    <a onclick="showSection('features')">服务器特色</a>
+    <a onclick="showSection('members')">服务器成员</a>
+    <a onclick="showSection('buildings')">建筑大赏</a>
+    <a onclick="showSection('tech')">生电机器</a>
+    <a onclick="showSection('wuyu')">Wuyu 私密视频</a>
+  </nav>
+
+  <header>
+    <h1>PWT 原版生电服务器</h1>
+    <p>红石与创造的世界，等你来探索！</p>
+  </header>
+
+  <section id="home" class="active">
+    <h2>📰 最新通知</h2>
+    <div class="card">
+      <ul>
+	<li>📅 详情请加Q群585579114 </li>
+        <li>📅 pwt服务器将于7月1日正式开启🎉🎉🎉</li>
+        <li>🎉 恭喜玩家「bingwuyu」获得服务器“最佳擦边男主播”称号</li>
+        <li>📧 请定期检查QQ群文件获取蓝图资料</li>
+      </ul>
+    </div>
+    <h2>👋 欢迎你！</h2>
+    <div class="card">
+      <p>这里是 PWT 原版生电服务器的主页。我们欢迎热爱Minecraft的你，无论你擅长建筑、生电、还是探险，都能在这里找到志同道合的小伙伴！</p>
+      <p>点击上方导航进入相应板块了解更多详情。</p>
+    </div>
+  </section>
+
+  <section id="apply">
+    <h2>📨 报名方式</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="rules">
+    <h2>📜 服务器规定</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="features">
+    <h2>✨ 服务器特色</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="members">
+    <h2>👥 服务器成员</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="buildings">
+    <h2>🏰 建筑大赏</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="tech">
+    <h2>🔧 生电机器</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <section id="wuyu">
+    <h2>🔒 Wuyu 私密视频</h2>
+    <p>暂无内容</p>
+  </section>
+
+  <footer>
+    <p>PWT 原版生电服务器 © 2025</p>
+    <p>Powered by Minecraft 爱好者联盟</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
