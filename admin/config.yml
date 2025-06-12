@@ -9,7 +9,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "announcements"
     label: "服务器通知"
-    folder: "_posts/announcements"
+    folder: "content/announcements"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
